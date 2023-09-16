@@ -7,189 +7,208 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  background-image: url('../public/images/NightLandscape.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: fixed;
 }
 
-.bucket-app {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 800px;
-  min-height: 600px;
-  background: black;
-  text-align: center;
-  margin: 32px auto;
-  border-radius: 20px;
-  padding-bottom: 32px;
-}
 
+/* h1 formatting */
 h1 {
-  margin: 32px 0;
-  color: #fff;
-  font-size: 24px;
+  font-size: 60px;
+  padding: 1%;
 }
 
+/* Setting a background image along with area size and flexbox */
+main {
+  margin-bottom: 2%;
+  height: 100%;
+  width: 100%;
+  border: 5px solid #ffd700;
+  display: flex;
+  flex-wrap: wrap;
+  color: #bababa;
+}
+
+/* Setting opacity and color settings to be used in text boxes */
+.transparent {
+  margin: 2%;
+  background-color: #000000;
+  border: 2px solid #808080;
+  opacity: 0.8;
+}
+
+/* Setting flex grow/shrink/basis */
+aside {
+  flex: 1 1 100%;
+  padding: 5%;
+}
+
+/* h2 (about me) font settings */
+h2 {
+  font-size: 50px;
+}
+
+/* Setting flexbox and position for avatar and contact info */
+aside section {
+  padding-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Avatar image modification */
+aside img {
+  border-radius: 10%;
+}
+
+/* h3 (Contact) font settings */
 h3 {
-  margin: auto;
-  color: rgb(66, 171, 231);
-  font-size: 20px;
+  font-size: 25px;
 }
 
-.complete {
-  text-decoration: line-through;
-  opacity: 0.4;
+/* Contact info font settings */
+aside li {
+  font-weight: bold;
 }
 
-.bucket-form {
-  margin-bottom: 32px;
+/* Contact info spacing */
+aside ul {
+  margin-left: 5%;
 }
 
-.bucket-input {
-  padding: 14px 32px 14px 16px;
-  border-radius: 4px;
-  border: 2px solid #5d0cff;
-  outline: none;
-  width: 320px;
-  background: transparent;
-  color: #fff;
-}
-
-.bucket-input::placeholder {
-  color: #e2e2e2;
-}
-
-.bucket-button {
-  padding: 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
-  background: #5d0cff;
-  color: #fff;
-  text-transform: capitalize;
-}
-
-.bucket-input.edit {
-  border: 2px solid #149fff;
-}
-
-.bucket-button.edit {
-  background: linear-gradient(
-    90deg,
-    rgba(20, 159, 255, 1) 0%,
-    rgba(17, 122, 255, 1) 100%
-  );
-  padding: 16px 22px;
-}
-
-.bucket-container {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-.bucket-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 4px auto;
-  color: #fff;
-  padding: 16px;
-  border-radius: 5px;
-  width: 90%;
-}
-
-.low {
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
-}
-
-.medium {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 12, 241, 1) 0%,
-    rgba(250, 0, 135, 1) 100%
-  );
-}
-
-.high {
-  background: linear-gradient(
-    90deg,
-    rgba(20, 159, 255, 1) 0%,
-    rgba(17, 122, 255, 1) 100%
-  );
-}
-
-.icons {
-  display: flex;
-  align-items: center;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.delete-icon {
-  margin-right: 5px;
-  color: #fff;
-}
-
-.edit-icon {
-  color: #fff;
-}
-
-/* Dropdown menu */
-
-/* Dropdown Button */
-.dropbtn {
-  background-color: #ec5700;
-  border-radius: 4px;
-  width: 75px;
-  color: white;
-  padding: 16px;
-  margin: 10px;
-  /* font-size: 16px; */
-  border: none;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ffffff;
-  min-width: 215px;
-  border-radius: 4px;
-  padding: 16px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content p {
-  color: black;
-  padding: 12px 16px;
+/* Anchor font and color stlylizing */
+a {
+  font-weight: 100;
+  color: #bababa;
   text-decoration: none;
-  display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content p:hover {
-  background-color: #ddd;
+a:hover {
+  color: #f18e3d;
+  text-decoration: underline;
+  text-shadow: #000000 1px 0 10px;;
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+/* Setting flexbox and positioning for navigation menu */
+nav {
+  flex: 1;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav li a {
+  border-radius: 30%;
+  transition: all 0.5s ease-in-out;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #5d0cff;
+nav li:hover a {
+  text-shadow: 1px 1px 10px #000000, 0px 0px 5px #ffffff, 0px 0px 30px #ffffff;
+}
+
+/* Adding pseudo-elements to before and after list elements*/
+nav li::before, nav li::after {
+  content: '\2728';
+}
+
+/* Setting flexbox spacing and positioning for portfolio projects */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Larger size and flex scaling */
+.big-projects {
+  flex: 1 1 100%; /* Takes up the full width of the row */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Smaller size and flex scaling */
+.small-projects {
+  flex: 1 1 calc(33.33% - 20px); /* Distribute equally in a row with some spacing */
+  max-width: calc(33.33% - 20px); /* Set max width for small projects */
+  margin: 10px; /* Add some margin for spacing */
+  padding: 10px;
+}
+
+/* h4 (big project names) font settings */
+h4 {
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.ProjectGitHub {
+  font-weight: 100;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* h5 (small project names) font settings */
+h5 {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Project image border, opacity, and hover transition setup */
+.big-projects img, .small-projects img {
+  border: 5px solid #ffd700;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.7;
+}
+
+.big-projects img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+  height: 50vh; /* Maintain aspect ratio */
+}
+
+.small-projects img {
+  width: 100%;
+}
+
+/* Project image hover glow and opacity effect */
+.big-projects img:hover, .small-projects img:hover {
+  box-shadow: inset 0px 0px 30px #ff0000, 0 0 15px #ff0000;
+  opacity: 1;
+}
+
+/* footer styling */
+footer {
+  background-color: #053d6e;
+}
+
+/* Media query and adjusting elements according to screen size */
+@media screen and (min-width: 768px) {
+  aside {
+    flex: 1 1 60%;
+  }
+
+  aside p {
+    line-height: 2;
+  }
+
+  aside section {
+    margin-top: 15%;
+  }
+
+  aside ul {
+    line-height: 2.5;
+  }
+
+  nav {
+    line-height: 5;
+  }
 }
